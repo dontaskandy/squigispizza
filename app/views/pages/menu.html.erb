@@ -1,2 +1,271 @@
-<h1>Pages#menu</h1>
-<p>Find me in app/views/pages/menu.html.erb</p>
+
+
+
+<!DOCTYPE html>
+
+<body>
+
+
+
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sandwiches</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sides</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dinners');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Dinners</div>
+      </a>
+     <a href="javascript:void(0)" onclick="openMenu(event, 'Specials');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Specials</div>
+      </a>
+     <a href="javascript:void(0)" onclick="openMenu(event, 'Extras');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Extras</div>
+      </a>
+
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Small Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.05</span></h1>
+      <p class="w3-text-grey">Extra toppings $1.10 each, $1.65 for thick crust. </p>
+      <hr>
+   
+      <h1><b>Medium Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.60</span></h1>
+      <p class="w3-text-grey">Extra toppings $1.50, $1.95 for thick crust.</p>
+      <hr>
+      
+      <h1><b>Large Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.05</span></h1>
+      <p class="w3-text-grey">Extra toppings $1.90, $2.35 for thick crust.</p>
+      <hr>
+
+      <h1><b>X-Large Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.45</span></h1>
+      <p class="w3-text-grey">Extra toppings $2.30, $2.65 for thick crust.</p>
+      <hr>
+
+      <h1><b>King Cheese Pizza</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.15</span></h1>
+      <p class="w3-text-grey">Extra toppings $2.90, $2.85 for thick crust.</p>
+      <hr>
+
+      <h1><b>Ask for Dons Style!</b><span class="w3-tag w3-red w3-round">Hot!</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$0.50</span></h1>
+      <p class="w3-text-grey">To add Garlic crust as a topping</p>
+      <hr>
+    <h1><b>Available Toppings</b> </h1>
+      <p class="w3-text-grey">Sausage, Ground Sausage, Pepperoni, green pepper, Mushroom, Onion, Tomato, Canadian Bacon, Green Olives, Black Olives, Pepper Rings, Jalapeno, Bacon, Ham, Pinapple.</p>
+      <hr>
+
+
+
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Ham Hoagie</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Hot Ham and Cheese, on a toasted bun with Mayo, lettuce, and tomato.</p>
+      <hr>
+   
+      <h1><b>Meatball</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Toasted Bun, smothered in red sause and motzerella cheese,topped with three juicy meatballs. </p>
+      <hr>
+      
+      <h1><b>Italian Sausage</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Toasted Bun, smothered in red sauce, melted motzerella cheese, topped off with auju and sausage</p>
+      <hr>
+
+      <h1><b>Beef Hoagie</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Toasted Bun, topped with melted cheese, Hot beef, and Mayo, Lettuce, Tomato.</p>
+    <hr>
+      <h1><b>Combo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey">Toasted Bun, Sausage, Beef, smothered in red sause, and auju.  /p>
+      <hr>
+
+ <h1><b>Hamburger</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.00</span></h1>
+      <p class="w3-text-grey">Toasted Hambuger bun, all beef patty grilled to perfection, with your choice of toppings. toppings ex. Lettuce, tomato, pickles, jalapenos, ketchup, mustard, mayo, grilled or raw onion. </p>
+      <hr>
+ <h1><b>Dominator </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.75</span></h1>
+      <p class="w3-text-grey">Toasted Hamburger bun,two all beef pattys grilled to perfection, American cheese, with your choice of toppings. toppings ex. Lettuce, tomato, pickles, jalapenos, ketchup, mustard, mayo, grilled or raw onion.</p>
+      <hr>
+<h1><b>Italian Beef </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Toasted Bun, juicy italian beef, cheese and red sause may be added for an additional $0.50.</p>
+      <hr>
+
+
+
+
+<h1><b>American Chicken </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Toasted Bun with Melted American cheese, topped with mayo lettuce and tomato, with three strips of breaded chicken.</p>
+      <hr>
+
+
+      <h1><b>Italian Chicken </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Toasted Bun with Marinara sause, melted motzeralla cheese, topped with three strips of breaded chicken.</p>
+      <hr>
+
+<h1><b>Blt </b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Toasted Bun, topped with bacon, Lettuce, Tomato, and Mayo.</p>
+      <hr>
+
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Fried Green Beans</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1><b>Cheese Cubes</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Cauliflower</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Fried Mushrooms</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"></p>
+    <hr>
+<h1><b>Fried Zucchini</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1><b>Onion Rings</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+      <h1><b>Fried Pickles</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+      
+     
+
+      <h1><b>French Fry</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1><b>Tator Tots</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+   
+      <h1><b>Garlic Bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.00</span></h1>
+      <p class="w3-text-grey"></p>
+      <hr>
+
+       <h1><b>Cheese Sticks</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">six peices</p>
+      <hr>
+
+      <h1><b>Cheese Fry</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">W/ Natcho Cheese</p>
+      <hr>
+      
+      <h1><b>Jalapeno Poppers</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"> Cream Cheese or Cheddar Cheese.</p>
+    <hr>
+
+    <h1><b>Pizza Bread</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.75</span></h1>
+      <p class="w3-text-grey"> Comes with two toppings of your choice</p>
+      <hr>
+
+      <h1><b>Wings</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey"> Comes with six mildly seasoned wings</p>
+      <hr>
+      
+      <h1><b>Mini tacos</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Eight Fried mini tacos</p>
+    <hr>
+
+<h1><b>Shrimp</b> <span class="w3-tag w3-grey w3-round">Favorite</span><span class="w3-right w3-tag w3-dark-grey w3-round">$6.00</span></h1>
+      <p class="w3-text-grey">Eight fried butterfly shrimp.</p>
+      <hr>
+   
+      <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">Eight fried Ravioli</p>
+      <hr>
+      
+      <h1><b>Chicken Nuggets</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">Eight count </p>
+      <hr>
+      
+      <h1><b>Large Bosco</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+      <p class="w3-text-grey">Six Bosco sticks</p>
+      <hr>
+      
+      <h1><b>Small Bosco</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+      <p class="w3-text-grey">Three Bosco sticks</p>
+
+
+    </div>
+
+
+
+
+     <div id="Dinners" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Shrimp Dinner</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.50</span></h1>
+      <p class="w3-text-grey">Eight Peices of Jumbo Breaded Butterfly Shrimp, A large French Fry, and half a Garlic bread. </p>
+      <hr>
+
+
+      <h1><b>Wing Ding Dinner</b><span class= "w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey"> Six Mildly Seasoned Chicken Wings, A large French Fry, and half a Garlic Bread.</p>
+      <hr>
+
+      <h1><b>Chicken Strip Dinner</b><span class= "w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey"> Five Breaded Chicken Strips, A large French Fry, and half a Garlic Bread.</p>
+      <hr>
+
+      <h1><b>Mini Taco Dinner</b><span class= "w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey"> Eight Mini Tacos, A large French Fry, and half a Garlic Bread.</p>
+      <hr>
+
+      <h1><b>Fried Ravioli Dinner</b><span class= "w3-right w3-tag w3-dark-grey w3-round">$6.50</span></h1>
+      <p class="w3-text-grey"> Eight Fried Cheese Ravioli, A large French Fry, and half a Garlic Bread.</p>
+      <hr>
+
+      <h1><b>Kids Meal</b><span class= "w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey"> Choice of Eight peice nugget or a Hamburger, served with an order of tator tots and fruit snacks.</p>
+      <hr>
+
+
+      </div>
+
+
+
+
+      <div id="Specials" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Wednesday Special</b> <span class="w3-right w3-tag w3-dark-grey w3-round">12.65</span></h1>
+      <p class="w3-text-grey">X-Large, One topping Pizza (pop doesn't come with wednesday special) </p>
+      <hr>
+
+      <h1><b>Crazy Eight Special</b> <span class="w3-right w3-tag w3-dark-grey w3-round">23.45</span></h1>
+      <p class="w3-text-grey">Eight toppings of your choice, With Free 2-liter any day of the week. </p>
+      <hr>
+
+
+
+
+      </div>
+
+
+
+      <div id="Extras" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>2-liters</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.00</span></h1>
+      <p class="w3-text-grey">Pepsi Products. </p>
+      <hr>
+      </div><br>
+
+  </div>
+</div>
+
+
+
+
+
+

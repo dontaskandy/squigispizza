@@ -4,14 +4,40 @@
     <title>Squigis</title>
     <%= csrf_meta_tags %>
 
-  </head>
-
-  <body>
   
-
-
-
  
+
+<head>
+
+
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("http://i.imgur.com/gG6O67Z.jpg");
+    min-height: 90%;
+
+}
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <ul class="w3-navbar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <li><%= link_to"Home",root_path%></li>
+    <li><%= link_to"menu", pages_menu_path %></li>
+   <li><%= link_to "about", pages_about_path %></li>
+    <li><%= link_to "CONTACT",pages_contact_path %></li>
+  </ul>
+</div>
 
 
 
@@ -19,6 +45,51 @@
 
 
 
+<!-- Add Google Maps -->
+
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script>
+// Google Map Location
+var myCenter = new google.maps.LatLng(41.522545, -87.4280028);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
 
 
 
